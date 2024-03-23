@@ -42,7 +42,7 @@ export { hearAnimal };
 // App logic
 import animals, { hearAnimal } from "./data";
 
-//--------------(1) Destructuring Objects-----------------//
+//-------------- Destructuring Objects -----------------//
 
 console.log("Animals: ", animals);
 /*Prints:
@@ -94,8 +94,6 @@ console.log("Hamster Diet: ", hamsterDiet);
 
 // This is useful when ingesting JSON API objects, treated as JS objects. This approach shows how I store only the values I am interested in: `cat > feedingRequirements > food`, and then the entire `dog` object. Similar use cases are used when only needing to access particular fields of JSON API inputs, and not worrying about excess metadata. 
 ```
-//--------------(2) Functional Objects-----------------//
-
 
 ### Complex State
 ```js
