@@ -3,6 +3,7 @@ This repo showcases my understanding of more complex React skills through code s
 - **Complex State** (nested JS objects and arrays),
 - **Destructuring** (Arrays, Objects, and nested Arrays and Objects),
 - **Controlled Components** (reflecting state across components),
+- **Conditional Rendering** (utilizing the Terenary and AND operators)
 - **Event Handling** (across components)
 
 ## Code Skill snippet overviews
@@ -159,6 +160,9 @@ function App() {
 
 export default App;
 ```
+### Conditional Rendering
+See my ***dedicated repo*** & ***live web app*** demo which showcases this skill:
+https://github.com/SpiderAndCat/reactBasicsDemo_conditionalRenderingAndUseState
 
 ### Controlled Components
 ```js
