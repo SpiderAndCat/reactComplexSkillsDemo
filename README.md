@@ -12,14 +12,14 @@ This repo showcases my understanding of more complex React skills through code s
 // Animal data
 const animals = {
   cat: {
-    name: "Jimmy",
+    name: "cat",
     sound: "meow",
     feedingRequirements: {
       food: "fish",
       drink: "water",
     },
   },
-  dog: { name: "Arfy", sound: "woof" },
+  dog: { name: "dog", sound: "woof" },
 // Toggle including this:
 // hamster: { name: "hamster", sound: "squeak" },
 
