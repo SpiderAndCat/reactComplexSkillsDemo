@@ -97,7 +97,67 @@ console.log("Hamster Diet: ", hamsterDiet);
 
 ### Complex State
 ```js
-//show code here
+import React, { useState } from "react";
+
+function App() {
+// -------------------------- State ------------------------ //
+
+  const [contact, setContact] = useState({
+    fName: "",
+    lName: "",
+    email: ""
+  });
+
+// ---------------------- Event Handler -------------------- //
+
+  function handleChange(event) {
+    // Grabs the input field name (component identifier) and value (linked to a state) from the input field that triggered the event
+    const { name, value } = event.target;
+
+    // Utilizes the spread operator, to create a new object, merging the old data, and overwriting the field that is being edited and thereby triggered the event
+    setContact(prevValue => {
+      return {
+        ...prevValue,
+        [name]: value
+      };
+    });
+  }
+
+// ----------------------- Form Markup --------------------- //
+
+  // The controlled components bind the state variables to the value displayed in the text field, in real time (between each character typed)
+  return (
+    <div className="container">
+      <h1>
+        Hello {contact.fName} {contact.lName}
+      </h1>
+      <p>{contact.email}</p>
+      <form>
+        <input
+          onChange={handleChange}
+          name="fName"
+          value={contact.fName}
+          placeholder="First Name"
+        />
+        <input
+          onChange={handleChange}
+          name="lName"
+          value={contact.lName}
+          placeholder="Last Name"
+        />
+        <input
+          onChange={handleChange}
+          name="email"
+          value={contact.email}
+          placeholder="Email"
+        />
+        <button>Submit</button>
+      </form>
+    </div>
+  );
+}
+
+export default App;
 ```
 
 ### Controlled Components
