@@ -1,5 +1,5 @@
 # reactComplexSkillsDemo
-This repo showcases my understanding of more complex React skills through code snippet walkthroughs, about the following topics:
+This repo showcases my understanding of more complex React skills through code snippet walkthroughs, and an interative web app demo. This demonstrates my understaning of the following topics:
 - **Complex State** (nested JS objects and arrays),
 - **Destructuring** (Arrays, Objects, and nested Arrays and Objects),
 - **Controlled Components** (reflecting state across components),
